@@ -1,0 +1,312 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  text-decoration: none;
+  font-family: "Oxygen", Arial;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Oxygen", Arial;
+}
+.title{
+  text-align: center;
+  margin: .5em;
+}
+
+nav{
+  background-color: #4dcf26;
+}
+
+nav ul{
+
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1em;
+}
+nav a:hover{
+  background-color: rgb(58, 187, 6);
+}
+header{
+  box-shadow: 0 0 1em black;
+
+  z-index: 2;
+}
+
+h1{
+  color: #09c705;
+  text-align: center;
+}
+.top-content{
+  padding: 1em;
+}
+.top-content img{
+  max-width: 0;
+}
+
+.Presentation{
+  text-align: center;
+  line-height: 3em;
+  background: #f6f6f6;
+  font-family: Verdana;
+
+}
+.Presentation a, article a{
+  text-decoration: none;
+  color: #58635d;
+}
+
+.card{
+  margin-bottom: 2em;
+}
+.Presentation span[class^=icon]{
+    font-size: 3.5em;
+    color: #26c40c;
+}
+.Presentation img{
+  margin: 0 auto;
+  size: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.Presentation p{
+  width: 100%;
+  font-size: 0.9em;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0;
+  margin: 3em .8em .1em .8em;
+  color: #32a117;
+  background-color: black;
+}
+
+.default-btn{
+  background-color: #2fbabe;
+  color: white;
+  padding: 1em 2em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5em;
+}
+.default-btn a{
+  text-decoration: none;
+  color: white;
+}
+.Presentation .default-btn{
+  margin: 1.5em;
+}
+
+h2{
+  color: #26c40c;;
+  font-variant: small-caps;
+  font-size:  1.7em;
+
+}
+.Design{
+  margin: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+.Design h2:nth-of-type(n+2){
+  margin-top: 3em;
+}
+.Design .default-btn{
+  margin-top: 2em;
+}
+footer{
+  text-align: center;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+footer img{
+  display: inline-block;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#icons{
+  background: #23303e;
+  text-decoration: none;
+  padding: 0.8em;
+}
+#last{
+  background: rgb(32, 34, 38);
+  padding: 1em;
+  color: white;
+  font-family: sans-serif;
+}
+footer span[class^=icon]{
+  margin-top: 1em;
+    font-size: 2em;
+    color: white;
+    padding: 0.4em;
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media screen and (min-width: 48.75em){
+  .top-content{
+    background-color: #4dcf26;
+
+  }
+  .Presentation{
+    line-height: 2em;
+  }
+  .top-content h1, .top-content p{
+    color: white;
+  }
+
+  section{
+    width: 40%;
+    float: left;
+    margin: 5%;
+  }
+  .Design{
+
+    text-align: left;
+
+  }
+
+  .Design .default-btn{
+
+    float: right;
+    display: ;
+
+  }
+
+  nav ul li{
+    display: block;
+
+
+  }
+  nav{
+  text-align: right;
+  }
+  nav a{
+    color: white;
+    display: inline-block;
+    color: #4dcf26;;
+  }
+  .top-content img{
+    all: unset;
+    display: inline-block;
+    max-width: 10%;
+
+  }
+
+}
+
+@media screen and (min-width:67.5em){
+  .title{
+    text-align: left;
+    margin: 0;
+
+  }
+  .title img{
+    width: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+header{
+  position: relative;
+
+}
+
+  nav ul {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-top: 0.5em;
+
+  }
+
+  nav ul li{
+    padding: 0;
+    margin: 0;
+
+  }
+  nav a{
+    padding: .7em;
+    color: #4dcf26;
+  }
+  nav a:hover{
+    background-color: #4dcf26;;
+    color: white;
+  }
+.top-content{
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+
+section{
+  max-width: 15%;
+  float: left;
+  margin: 5%;
+  line-height: 1.8em;
+  color: #58635d;
+}
+.Design h1{
+  font-family: cursive;
+}
+.Design h3{
+  font-size: 1em;
+}
+
+.Design article{
+
+  display: inline-block;
+  max-width: 49%;
+  line-height: 1.8em;
+}
+}
+.PerryBot{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #4dcf26;;
+  color: #4dcf26;
+  font-family: Verdana;
+  padding: 2em;
+  background: white;
+}
+.Chat, .perry_img{
+  display: none;
+}
+.PerryBot:hover{
+  width: 30%;
+  height: 60%;
+}
+.PerryBot:hover .Chat{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: grey;
+  border: 1px solid grey;
+  width: 100%;
+  text-align: center;
+}
+.PerryBot:hover .perry_img{
+  display: block;
+}
+.PerryBot:hover .perry_img img{
+  width: 25%;
+  position: absolute;
+  left: 45%;
+  padding-top: 2em;
+  border: 1px solid black;
+  border-radius: 50% 50%;
+
+}
