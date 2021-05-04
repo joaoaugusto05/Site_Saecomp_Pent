@@ -39,12 +39,13 @@ nav a:hover{
 }
 header{
   box-shadow: 0 0 1em black;
-
   z-index: 2;
 }
-
-h1{
-  color: #09c705;
+.top-content p{
+  color: white !important;
+}
+.top-content h1{
+  color: white;
   text-align: center;
 }
 .top-content{
@@ -71,7 +72,7 @@ h1{
 }
 .Presentation span[class^=icon]{
     font-size: 3.5em;
-    color: #26c40c;
+    color: #2aa94d;
 }
 .Presentation img{
   margin: 0 auto;
@@ -79,16 +80,7 @@ h1{
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.Presentation p{
-  width: 100%;
-  font-size: 0.9em;
-  text-align: center;
-  padding-left: 0px;
-  padding-right: 0;
-  margin: 3em .8em .1em .8em;
-  color: #32a117;
 
-}
 
 .default-btn{
   background-color: #2fbabe;
@@ -102,12 +94,15 @@ h1{
   text-decoration: none;
   color: white;
 }
+.default-btn:hover{
+  background-color: #2aa94d;
+}
 .Presentation .default-btn{
   margin: 1.5em;
 }
 
 h2{
-  color: #26c40c;;
+  color: #2aa94d;
   font-variant: small-caps;
   font-size:  1.7em;
 
@@ -128,19 +123,9 @@ footer{
   font-size: 0.7em;
   text-decoration: none;
 }
-footer img{
-  display: inline-block;
-}
-footer a{
-  color: white;
-  text-decoration: none;
-}
 
-#icons{
-  background: #23303e;
-  text-decoration: none;
-  padding: 0.8em;
-}
+
+
 #last{
   background: rgb(32, 34, 38);
   padding: 1em;
@@ -158,6 +143,20 @@ footer span[class^=icon]{
   display: block;
   clear: both;
 }
+
+.title{
+  text-align: left;
+  margin: 0;
+
+}
+.title img{
+  
+    display: block;
+    margin-left: 45%;
+    width: 10%;
+ 
+}
+
 
 @media screen and (min-width: 48.75em){
   .top-content{
@@ -185,7 +184,7 @@ footer span[class^=icon]{
   .Design .default-btn{
 
     float: right;
-    display: ;
+    display: block;
 
   }
 
@@ -200,21 +199,14 @@ footer span[class^=icon]{
   nav a{
     color: white;
     display: inline-block;
-    color: #4dcf26;;
-  }
-  .top-content img{
-    all: unset;
-    display: inline-block;
-    max-width: 10%;
 
   }
+  
 
 }
 
 @media screen and (min-width:67.5em){
-  .Presentation p{
-    background-color: black
-  }
+
   .title{
     text-align: left;
     margin: 0;
@@ -225,6 +217,7 @@ footer span[class^=icon]{
     width: 10%;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-left: 0;
   }
 header{
   position: relative;
@@ -293,11 +286,11 @@ section{
 .Chat, .perry_img{
   display: none;
 }
-.PerryBot:hover{
+.PerryBot:focus{
   width: 30%;
   height: 60%;
 }
-.PerryBot:hover .Chat{
+.PerryBot:focus .Chat{
   display: block;
   position: absolute;
   bottom: 0;
@@ -307,10 +300,10 @@ section{
   width: 100%;
   text-align: center;
 }
-.PerryBot:hover .perry_img{
+.PerryBot:focus .perry_img{
   display: block;
 }
-.PerryBot:hover .perry_img img{
+.PerryBot:focus .perry_img img{
   width: 25%;
   position: absolute;
   left: 45%;
@@ -319,3 +312,17 @@ section{
   border-radius: 50% 50%;
 
 }
+.top-content {
+  background: linear-gradient(
+                       rgba(20,20,20, .3), 
+                       rgba(20,20,20, .7)),
+                       url( "../images/background.jpg");
+  }
+  a h2:hover{
+    color:#2fbabe;
+  }
+
+  h1{
+    color: #2aa94d;
+    text-align: center;
+  }
